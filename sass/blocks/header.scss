@@ -1,0 +1,30 @@
+.header{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+}
+
+.header-left {
+    grid-column: span 11;
+    padding-left: 15.9%;
+    padding-top: 4.8%;
+    padding-bottom: 8.7%;
+    background: url('/img/image1.png') 100% center no-repeat;
+    background-size: 100%;
+}
+
+.header_logo{
+    display: block;
+    max-width: 100%;
+}
+.header_slogan{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+    margin-top: 14px;
+    
+}
+
+.header-right{
+    grid-column: span 5;
+}
