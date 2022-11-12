@@ -1,0 +1,50 @@
+$menubg: rgb(255, 174, 0);
+
+.menu{
+    position: absolute;
+    right: 11%;
+    top: 50px;
+}
+
+.menu_hamburger{
+    width: 119px;
+    height: 114px;
+}
+
+.menu_list{
+    background-color: $menubg;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    align-items: center;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 725px;
+    padding-right: 119px;
+    padding-left: 25px;
+    box-sizing: border-box;
+    display: none;
+    z-index: -9999;
+}
+.menu_list--active{
+    display: flex;
+    z-index: 1;
+}
+.menu_link{
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+    line-height: 1.7;
+    text-decoration: none;
+    padding: 30px;
+    transition-duration: 500ms;
+    transition-property: color;
+
+    &:hover {
+        color: $black;
+    }
+}
